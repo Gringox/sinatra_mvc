@@ -1,0 +1,8 @@
+<% @tasks.each do |task| %>
+  <p>Task id: <%= task.id %></p>
+  <p>Task name: <%= task.name %></p>
+  <% if task.completed_at %>
+    <p>Task completed at: <%= task.completed_at %></p>
+  <% end %>
+  <br>
+<% end %>
